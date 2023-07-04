@@ -1,1 +1,1 @@
-# React Shop app with materializecss and [Fortnite api](https://fortniteapi.io/).
+# React Shop app with materializecss and [FortniteApi.io](https://fortniteapi.io/).
