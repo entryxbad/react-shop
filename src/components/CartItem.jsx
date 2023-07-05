@@ -1,14 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ShopContext } from '../context'
 
-const CartItem = ({
-    id,
-    name,
-    price,
-    quantity,
-    removeFromCart = Function.prototype,
-    incrementQuantity = Function.prototype,
-    decrementQuantity = Function.prototype,
-}) => {
+const CartItem = ({ id, name, price, quantity }) => {
+    const { removeFromCart, incrementQuantity, decrementQuantity } = useContext(ShopContext)
+
     return (
         <li className='collection-item'>
             {name}{' '}

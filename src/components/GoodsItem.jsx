@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ShopContext } from '../context'
 
-const GoodsItem = ({ id, name, description, price, full_background, addToCart = Function.prototype }) => {
+const GoodsItem = ({ id, name, description, price, full_background }) => {
     const item = { id, name, price }
+
+    const { addToCart } = useContext(ShopContext)
 
     return (
         <div className='card'>
